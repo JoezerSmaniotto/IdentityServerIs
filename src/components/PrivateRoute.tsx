@@ -21,31 +21,3 @@ const PrivatePage: React.FC = () => {
 
 export default PrivatePage;
 
-
-// // src/components/PrivateRoute.tsx
-// import React, { ReactNode, useEffect, useState } from 'react';
-// import { useAuth } from 'react-oidc-context';
-// import { useNavigate } from 'react-router-dom';
-
-// interface PrivateRouteProps {
-//   children: ReactNode,
-// }
-
-// const PrivateRoute: React.FC<PrivateRouteProps> = ({ children }) => {
-//   const auth = useAuth();
-//   const navigate = useNavigate();
-//   const [myPage, setMyPage] = useState<any>(null);
-
-//   useEffect(() => {
-//     if (!auth.isAuthenticated) {// Não esta autenticado
-//       navigate('/');
-//     } else {
-//       setMyPage(children);
-//     }
-//   }, [auth])
-
-//   return myPage;
-
-// };
-
-// export default PrivateRoute;
